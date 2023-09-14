@@ -1,0 +1,277 @@
+<html>
+<head>
+
+<meta name="description" content="Verweisbaum: Auf- und Zuklappverweislisten (Tree View Links)" />
+<meta name="author" content="Christoph Gebauer" />
+<meta name="date" content="14.09.2023" />
+<meta name="credit" content="https://www.w3schools.com/" />
+<meta name="reference" content="https://www.w3schools.com/howto/howto_js_treeview.asp" />
+
+<link rel="stylesheet" href="MyLinks.css" />
+
+<script src="MyLinks.js"></script>
+
+</head>
+<body onload="MyLinksInit( '_blank' )">
+
+<input type="submit" value="Show All" onclick="return showAll();" />
+<input type="submit" value="Hide All" onclick="return hideAll();" />
+<input type="submit" value="Check Links" onclick="return checkLinks();" />
+
+
+<h1>Disclaimer / Haftungsausschlu&szlig;</h1>
+
+Diese Verweisseite dient ausschlie&szlig;lich als Beispiel. Wir übernehmen keinerlei Verantwortung für den Inhalt der vernetzten / verlinkten Seiten. 
+Die Benutzung dieser Seite und aller vernetzten / verlinkten Seiten erfolgt auf eigene Verantwortung und eigenes Risiko.
+
+
+<h1>Links</h1>
+
+<h2>Allgemein</h2>
+
+<ul title="Lieblinge" data-initiallyOpen="true">
+  <li><a href="https://www.google.de/" target="_blank">Google</a></li>
+  <li><a href="https://owad.de/lastWords/7" target="_blank">OWAD Quizzes</a></li>
+  <li><a href="https://www.setgame.com/set/puzzle" target="_blank">Set Game</a></li>
+  <li><a href="" target="_blank">...</a></li>
+</ul>
+
+
+<h2>&#x1F427; Linux</h2>
+
+<ul title="Aktuelles" data-initiallyOpen="true">
+  <li><a href="https://linuxnews.de/" target="_blank">Linux News</a></li>
+  <li><a href="https://linuxstoney.com/" target="_blank">LinuxStoney</a> / <a href="https://linuxstoney.com/category/linux-news/" target="_blank">Linux News</a></li>
+  <li><a href="https://gnulinux.ch/" target="_blank">GNU/Linux.ch</a></li>
+</ul>
+
+<ul title="Linux User Groups (LUG)" data-initiallyOpen="false">
+  <li><a href="https://www.lugg.de/" target="_blank">LUGG</a></li>
+  <li><a href="https://www.lugffm.de/" target="_blank">LUG Ffm</a></li>
+  <li><a href="http://www.mrlug.de" target="_blank">Marburger LUG</a></li>
+  <li><a href="https://frilug.de/" target="_blank">FriLUG - Friedberger Linux User Group</a></li>
+  <li><a href="http://www.dalug.org/" target="_blank">Linux User Group Darmstadt (DaLUG)</a></li>
+  <li><a href="https://www.lug-reutlingen.de/" target="_blank">LinuxUserGroup Reutlingen</a></li>
+  <li><a href="https://www.pug.org/" target="_blank">Penguin User Group (PUG)</a></li>
+  <li><a href="https://linux-am-dienstag.de/" target="_blank">Linux am Dienstag</a> (<a href="https://marius.bloggt-in-braunschweig.de/linux-am-dienstag/" target="_blank">Marius Welt</a>)</li>
+  <li><a href="https://www.devlug.de/" target="_blank">devLUG (virtuell / Hofheim)</a></li>
+  
+  <ul title="Tux">
+    <li><a href="https://de.wikipedia.org/wiki/Tux_(Maskottchen)" target="_blank">Tux (Maskottchen) auf Wikipädie</a> (<a href="https://commons.wikimedia.org/wiki/File:Tux.svg" target="_blank">Tux.svg</a>)</li>
+    <li><a href="https://isc.tamu.edu/~lewing/" target="_blank">Larry Ewing</a> (<a href="https://isc.tamu.edu/~lewing/linux/" target="_blank">Penguins</a>)</li>
+    <li><a href="http://www.home.unix-ag.org/simon/" target="_blank">Simon Budig</a> (<a href="http://www.home.unix-ag.org/simon/penguin/" target="_blank">Pingu(ine)</a>)</li>
+    <li><a href="https://garrettlesage.com/" target="_blank">Garrett LeSage</a> (<a href="https://github.com/garrett/Tux" target="_blank">Tux</a> / <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">No Copyright</a>)</li>
+    <li><a href="https://ifohancroft.com" target="_blank">IFo Hancroft</a></li>
+  </ul>
+</ul>
+
+<ul title="Veranstaltungen">
+  <div class="separator">Ganzjährig / Mehrmals</div>
+  <ul title="Linux Presentation Day (LPD)">
+    <li><a href="https://l-p-d.org/" target="_blank">l-p-d.org</a></li>
+  </ul>
+  <div class="separator">Februar</div>
+  <ul title="FOSDEM (Free and Open Source Developers' European Meeting)">
+    <li><a href="https://fosdem.org/">FOSDEM</a></li>
+  </ul>
+  <div class="separator">März</div>
+  <ul title="Chemnitzer Linux-Tage">
+    <li><a href="https://chemnitzer.linux-tage.de/" target="_blank">Chemnitzer Linux-Tage (CLT)</a></li>
+  </ul>
+  <div class="separator">April</div>
+  <ul title="Grazer Linuxtage">
+    <li><a href="https://www.linuxtage.at/" target="_blank">https://www.linuxtage.at/</a> (<a href="https://www.linuxtage.at/de/archive/" target="_blank">Archiv</a>)</li>
+  </ul>
+  <div class="separator">Juli</div>
+  <ul title="Tübix">
+    <li><a href="https://www.tuebix.org/">Tübix</a></li>
+  </ul>
+  <ul title="Debian">
+    <li><a href="https://www.debconf.org/" target="_blank">DebConf - The Debian Developer Conference</a></li>
+  </ul>
+  <div class="separator">August</div>
+  <ul title="FrOSCon">
+    <li><a href="https://www.froscon.de/" target="_blank">Free and Open Source Software Conference</a> (<a href="https://media.ccc.de/b/conferences/froscon" target="_blank">Recordings</a>)</li>
+  </ul>
+  <ul title="Linux Bier Wanderung">
+    <li><a href="https://linuxbierwanderung.com/">Linux Bier Wanderung (LBW)</a> (<a href="https://en.wikipedia.org/wiki/Linux_Bier_Wanderung" target="_blank">Wikipädie</a>)</li>
+  </ul>
+  <div class="separator">September</div>
+  <ul title="Kielux">
+    <li><a href="https://www.kielux.de/" target="_blank">Kieler Open Source und Linux Tage</a> (<a href="https://www.kieler-linuxtage.de/" target="_blank"><tt>kieler-linuxtage</tt></a>)</li>
+  </ul>
+  <ul title="GNU/LinuxDay (in Dornbirn / Vorarlberg)">
+    <li><a href="https://www.linuxday.at/" target="_blank">GNU/LinuxDay</a></li>
+  </ul>    
+  <div class="separator">November</div>
+  <ul title="Tux-Tage">
+    <li><a href="https://www.tux-tage.de/" target="_blank">Tux-Tage</a> (<a href="https://www.tux-tage.de/programm/" target="_blank">Programm</a>)</li>
+  </ul>
+  <ul title="Linux Plumbers Conference">
+    <li><a href="https://linuxplumbersconf.org/" target="_blank">LPC</a></li>
+  </ul>
+  <div class="separator">Irregulär</div>
+  <ul title="KDE">
+    <li><a href="https://akademy.kde.org/" target="_blank">Akademy</a> (<a href="https://community.kde.org/Akademy" target="_blank">List of Akademys</a>)</li>
+  </ul>
+  <ul title="GNOME (GNU Network Object Model Environment)">
+    <li><a href="https://events.gnome.org/">GNOME Events</a></li>
+  </ul>
+</ul>
+
+
+<h2>Musik</h2>
+
+<div>A</div>
+
+<ul style="color:#000000" title="AC&#x26a1;DC">
+  <li><a href="https://www.acdc.com/" target="_blank">AC/DC</a></li>
+  <ul title="YouTube" data-initiallyOpen="true">
+    <li>It's A Long Way To The Top (If You Wanna Rock 'N' Roll) <a href="https://youtu.be/eQluGs2SFRs" target="_blank">fsmetal [HD]</a></li>
+    <li>... <a href="" target="_blank">...</a></li>
+  </ul>
+</ul>
+
+<ul title="Die Ärzte">
+  <li><a href="https://www.bademeister.com/" target="_blank">die ärz&nbsp;<span class="mirror-inverted">t</span>&nbsp;e (<div class="mirror-inverted">die ärzte</div>)</a></li>
+  <ul title="YouTube" data-initiallyOpen="true">
+    <li>Super Drei <a href="https://youtu.be/jNmmEmBlh-Y" target="_blank">DieAerzteMusik</a></li>
+    <li>... <a href="" target="_blank">...</a></li>
+  </ul>
+</ul>
+
+
+<div>J</div>
+
+<ul title="Jethro Tull">
+  <li><a href="https://jethrotull.com/" target="_blank">Jethro Tull</a></li>
+  <ul title="YouTube" data-initiallyOpen="true">
+    <ul title="The Zealot Gene">
+      <ol start="4">
+        <li>The Zealot Gene <a href="https://youtu.be/1APwlHY50vo" target="_blank">Jethro Tull (Official Video)</a> / <a href="https://youtu.be/rWgYmEltaEU" target="_blank">Lyrical Dove (Lyrics)</a></li>
+        <li>... <a href="" target="_blank">...</a></li>
+      </ol>
+    </ul>
+  </ul>
+</ul>
+
+
+<div>Q</div>
+
+<ul title="Suzi Quatro">
+  <li><a href="http://www.suziquatro.com/" target="_blank">Suzi Quatro</a></li>
+  <ul title="YouTube" data-initiallyOpen="true">
+    <li>Stumblin' In (Suzi Quatro &amp; Chris Norman) <a href="https://youtu.be/Z1PcY59AX2Q" target="_blank">DiscoBar80 (1978 - disco)</a></li>
+  </ul>
+</ul>
+
+<ul title="Queen">
+  <li><a href="https://www.queenonline.com/" target="_blank">Queen</a></li>
+  <ul title="YouTube" data-initiallyOpen="true">
+    <li>Don't Stop Me Now <a href="https://youtu.be/HgzGwKwLmgM" target="_blank"> Queen Official</a></li>
+    <li>... <a href="" target="_blank">...</a></li>
+  </ul>
+</ul>
+
+
+<div>S</div>
+
+<ul title="Sophisticated Butcher Fingers">
+  <li><a href="https://www.butcherfingers.de/" target="_blank">Sophisticated Butcher Finger (SBF)</a></li>
+  <ul title="YouTube" data-initiallyOpen="true">
+    <li>Under Pressure <a href="https://youtu.be/FmuKI_6SOKE" target="_blank">AVMSGERMANY</a> (1:20:57 - 1:24:47)</li>
+    <li>... <a href="" target="_blank">...</a></li>
+  </ul>
+</ul>
+
+
+<div>W</div>
+
+<ul title="Wildes Holz">
+  <li><a href="http://www.wildes-holz.de/" target="_blank">Wildes Holz</a></li>
+  <ul title="YouTube" data-initiallyOpen="true">
+    <li>Don´t stop me now <a href="https://youtu.be/In9sECSLFT8" target="_blank">NorasRcrdngs (Live Concert &quot;Grobe Schnitzer&quot; ufaFabrik Berlin)</a></li>
+    <li>... <a href="" target="_blank">...</a></li>
+  </ul>
+</ul>
+  
+
+<h2>Stichwortverzeichnis</h2>
+
+<ul title="Beispiel für ein Stichwortverzeichnis">
+  <li><a href="https://de.wikipedia.org/wiki/Liste_der_Kfz-Kennzeichen_in_Deutschland">Liste der Kfz-Kennzeichen in Deutschland (Hauptverweis)</a></li>
+  <p id="KFZ-Kennzeichen" style="margin: 0px; margin-left: 20px">
+    Stichwortverzeichnis:&nbsp;
+    <a href="#KFZ-Kennzeichen" onclick="zeigeStichwoerter('KFZ-Kennzeichen','A-Z')" target="_self">A-Z</a>&nbsp;
+    <a href="#KFZ-Kennzeichen" onclick="zeigeStichwoerter('KFZ-Kennzeichen','A')" target="_self">A</a>&nbsp;
+    <a href="#KFZ-Kennzeichen" onclick="zeigeStichwoerter('KFZ-Kennzeichen','B')" target="_self">B</a>&nbsp;&hellip;&nbsp;
+    <a href="#KFZ-Kennzeichen" onclick="zeigeStichwoerter('KFZ-Kennzeichen','G')" target="_self">G</a>&nbsp;&hellip;&nbsp;
+    <a href="#KFZ-Kennzeichen" onclick="zeigeStichwoerter('KFZ-Kennzeichen','Y')" target="_self">Y</a>&nbsp;
+    <a href="#KFZ-Kennzeichen" onclick="zeigeStichwoerter('KFZ-Kennzeichen','Z')" target="_self">Z</a>
+    <span id="KFZ-Kennzeichen_A" class="nested">
+      A
+      <table class="stichwort_tabelle">
+        <tr><th class="stichwort_spalte_40">Kennzeichen</th><th class="stichwort_spalte_60">Bedeutung</th></tr>
+        <tr><td><a href="https://de.wikipedia.org/wiki/Augsburg">A</a></td><td>Augsburg</td></tr>
+        <tr><td><a href="https://de.wikipedia.org/wiki/Aschaffenburg">AB</a></td><td>Aschaffenburg</td></tr>
+	<tr><td><a href="">...</a></td><td>...</td></tr>
+      </table>
+    </span>
+    <span id="KFZ-Kennzeichen_B" class="nested">
+      B
+      <table class="stichwort_tabelle">
+        <tr><th class="stichwort_spalte_40">Kennzeichen</th><th class="stichwort_spalte_60">Bedeutung</th></tr>
+	<tr><td><a href="">...</a></td><td>...</td></tr>
+      </table>
+    </span>
+    <span id="KFZ-Kennzeichen_G" class="nested">
+      G
+      <table class="stichwort_tabelle">
+        <tr><th class="stichwort_spalte_40">Kennzeichen</th><th class="stichwort_spalte_60">Bedeutung</th></tr>
+	<tr><td><a href="https://de.wikipedia.org/wiki/Gera">G</a></td><td>Gera</td></tr>
+        <tr><td><a href="https://de.wikipedia.org/wiki/Landkreis_Gie%C3%9Fen">GI</a></td><td>Gießen</td></tr>
+        <tr><td><a href="">...</a></td><td>...</td></tr>
+      </table>
+    </span>
+    <span id="KFZ-Kennzeichen_Y" class="nested">
+      Y
+      <table class="stichwort_tabelle">
+        <tr><th class="stichwort_spalte_40">Kennzeichen</th><th class="stichwort_spalte_60">Bedeutung</th></tr>
+	<tr><td><a href="">...</a></td><td>...</td></tr>
+      </table>
+    </span>
+    <span id="KFZ-Kennzeichen_Z" class="nested">
+      Z
+      <table class="stichwort_tabelle">
+        <tr><th class="stichwort_spalte_40">Kennzeichen</th><th class="stichwort_spalte_60">Bedeutung</th></tr>
+        <tr><td><a href="https://de.wikipedia.org/wiki/Landkreis_Zwickau">Z</a></td><td>Zwickau</td></tr>
+	<tr><td><a href="https://de.wikipedia.org/wiki/Zweibr%C3%BCcken">ZW</a></td><td>Zweibrücken</td></tr>
+        <tr><td><a href="https://de.wikipedia.org/wiki/Burgenlandkreis">ZZ</a></td><td>Zeitz</td></tr>
+	<tr><td><a href="">...</td><td>...</td></tr>
+      </table>
+    </span>
+  </p>
+</ul>
+
+
+<h2>Referenzen</h2>
+
+<ul title="" data-initiallyOpen="true">
+  <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> / <a href="https://www.w3schools.com/howto/howto_js_treeview.asp" target="_blank">How TO - Tree View</a></li>
+  <li><a href="https://addons.mozilla.org/de/firefox/addon/cors-everywhere/" target="_blank">CORS Everywhere</a> (<a href="https://addons.mozilla.org/de/firefox/user/11574788/" target="_blank">spenibus</a>)</li>
+</ul>
+
+<p />
+
+<footer>
+  <hr class="disclaimer" />
+
+  <div align="center">
+    <font size="-1">Wir sind in keinster Weise verantwortlich für die Inhalte externer Internetseiten.</font>
+  </div>
+
+  <hr class="disclaimer" />
+</footer>
+
+</body>
+</html>
